@@ -11,6 +11,7 @@ const emojiDictionary = {
   "😨": "Fearful Face",
   "😰": "Anxious Face with Sweat",
   "😥": "Sad but Relieved Face",
+  "🙃": "Upside-Down Face",
   "": ""
 };
 
