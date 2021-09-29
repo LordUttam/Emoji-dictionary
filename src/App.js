@@ -10,12 +10,10 @@ const emojiDictionary = {
   "🦊": "Fox",
   "🦝": "Raccoon",
   "🐈": "Cat",
-  "🐈‍": "Black Cat",
   "🦁": "Lion",
   "🐅": "Tiger",
   "🐆": "Leopard",
   "🐎": "Horse",
-  "🦄": "Unicorn",
   "🦓": "Zebra",
   "🦌": "Deer",
   "🐂": "Ox",
@@ -111,20 +109,26 @@ export default function App() {
       <h1>Zoopedia</h1>
       <input
         onChange={emojiHandler}
-        placeholder="put an emoji to know the meaning"
+        placeholder="paste an animal emoji to know the name"
       />
       <h2>{meaning}</h2>
-      {emojiList.map((emoji) => {
-        return (
-          <span
-            onClick={() => emojiClickHandler(emoji)}
-            style={{ fontSize: "larger", padding: "0.5rem", cursor: "pointer" }}
-            key={emoji}
-          >
-            {emoji}
-          </span>
-        );
-      })}
+      <section>
+        {emojiList.map((emoji) => {
+          return (
+            <span
+              onClick={() => emojiClickHandler(emoji)}
+              style={{
+                fontSize: "2rem",
+                padding: ".5rem",
+                cursor: "pointer"
+              }}
+              key={emoji}
+            >
+              {emoji}
+            </span>
+          );
+        })}
+      </section>
     </div>
   );
 }

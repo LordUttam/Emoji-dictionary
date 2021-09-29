@@ -21,8 +21,14 @@ input {
   outline: none;
 }
 
-h1 {
+h1,
+h2 {
   color: whitesmoke;
+}
+
+section {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 span {
